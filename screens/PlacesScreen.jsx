@@ -61,7 +61,7 @@ export default function PlacesScreen() {
   const marker = markers.map((marker, index) => (
     <View style={styles.citiesCard} key={index}>
       <View>
-        <Text>Marker {index + 1}</Text>
+        <Text>{marker.name || `Marker ${index + 1}`}</Text>
       </View>
       <View>
         <Text>LAT: {marker.latitude} LON: {marker.longitude}</Text>
